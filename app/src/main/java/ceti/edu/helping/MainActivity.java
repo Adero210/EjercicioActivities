@@ -35,18 +35,4 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    public void  onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        String fresa = String.valueOf(text.getText());
-        outState.putString("Luis",fresa);
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        String fresa2 = savedInstanceState.getString("Luis");
-        text.setText(fresa2);
-
-    }
 }
